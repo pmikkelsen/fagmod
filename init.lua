@@ -3,8 +3,8 @@ minetest.register_node("fagmod:fagblock", {
     inventory_image = "fagblock.png",
     light_source = 15,
     groups = {
-        fleshy = 15,
         cracky = 1,
+	crunchy = 1,
         bouncy = 100,
         fall_damage_add_percent = -100
     }
