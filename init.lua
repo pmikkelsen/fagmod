@@ -5,7 +5,7 @@ minetest.register_node("fagmod:fagblock", {
     groups = {
         fleshy = 15,
         cracky = 1,
-        bouncy = 1000,
+        bouncy = 100,
         fall_damage_add_percent = -100
     }
 })
@@ -26,6 +26,15 @@ minetest.register_craft({
     output = "fagmod:fagmaker",
     recipe = {
         {"default:dirt", "default:dirt", "default:dirt"},
+        {"","",""},
+        {"","",""}
+    }
+})
+
+minetest.register_craft({
+    output = "fagmod:fagblock",
+    recipe = {
+        {"fagmod:fagmaker", "fagmod:fagmaker", "fagmod:fagmaker"},
         {"","",""},
         {"","",""}
     }
