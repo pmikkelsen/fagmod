@@ -5,7 +5,7 @@ minetest.register_node("fagmod:fagblock", {
     groups = {
         bouncy = 100,
         fall_damage_add_percent = -100,
-        oddly_breakable_by_hand = 1
+        oddly_breakable_by_hand = 10
     }
 })
 
@@ -16,7 +16,7 @@ minetest.register_node("fagmod:kloppblock", {
     groups = {
         bouncy = 100,
         fall_damage_add_percent = -100,
-        oddly_breakable_by_hand = 1
+        oddly_breakable_by_hand = 10
     }
 })
 
