@@ -3,10 +3,9 @@ minetest.register_node("fagmod:fagblock", {
     inventory_image = "fagblock.png",
     light_source = 15,
     groups = {
-        cracky = 1,
-	crunchy = 1,
         bouncy = 100,
-        fall_damage_add_percent = -100
+        fall_damage_add_percent = -100,
+        oddly_breakable_by_hand = 1
     }
 })
 
@@ -15,10 +14,9 @@ minetest.register_node("fagmod:kloppblock", {
     inventory_image = "kloppblock.png",
     light_source = 15,
     groups = {
-        cracky = 1,
-        crunchy = 1,
         bouncy = 100,
-        fall_damage_add_percent = -100
+        fall_damage_add_percent = -100,
+        oddly_breakable_by_hand = 1
     }
 })
 
