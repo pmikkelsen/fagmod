@@ -28,6 +28,7 @@ minetest.register_node("fagmod:fagmaker", {
         if pos ~= nil then
             minetest.set_node(pos, {name="fagmod:fagblock"})
         end
+        minetest.sound_play("ole",{to = user})
         return itemstack
     end
 })
@@ -43,7 +44,7 @@ minetest.register_craft({
 
 minetest.register_abm({
     nodenames = {"fagmod:fagblock"},
-    interval = 1,
+    interval = 10,
     chance = 5,
     action = function(pos, node, active_obj_cnt, active_obj_cnt_wider)
         minetest.set_node(pos, {name = "fagmod:kloppblock"})
@@ -52,7 +53,7 @@ minetest.register_abm({
 
 minetest.register_abm({
     nodenames = {"fagmod:kloppblock"},
-    interval = 1,
+    interval = 10,
     chance = 5,
     action = function(pos, node, active_obj_cnt, active_obj_cnt_wider)
         minetest.set_node(pos, {name = "fagmod:fagblock"})
